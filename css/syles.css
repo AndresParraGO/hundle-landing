@@ -1,0 +1,156 @@
+
+@font-face {
+  font-family: 'Poppins';
+  src: url(../fonts/Poppins-Regular.ttf);
+}
+@font-face {
+  font-family: 'PoppinsBold';
+  src: url(../fonts/Poppins-Regular.ttf);
+}
+@font-face {
+  font-family: 'OpenSans';
+  src: url(../fonts/OpenSans-Regular.ttf);
+}
+@font-face {
+  font-family: 'OpenSansBold';
+  src: url(../fonts/OpenSans-Bold.ttf);
+}
+
+
+:root {
+  --primaryColor: hsl(257, 40%, 49%);
+}
+
+.wrapper {
+  min-height: 100vh;
+  background-image: url(../images/bg-mobile.svg);
+  background-repeat: no-repeat;
+  -webkit-background-size: 100% 50%;
+  background-size: 100% 50%;
+}
+
+.container {
+  width: 90%;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'OpenSans', sans-serif;
+  background-color:var(--primaryColor);
+}
+
+h1,h2,h3,h4,h5,h6 {
+  font-family: 'Poppins', sans-serif;
+}
+
+
+
+.header {
+  padding: 2em 0;
+}
+
+.header img {
+  width: 200px;
+}
+
+
+.main {
+
+}
+
+.ilustration {
+  margin: 3em 0;
+}
+
+.ilustration img {
+  width: 100%;
+}
+
+
+.content {
+  color: #fff;
+  text-align: center;
+}
+
+.content__title {
+  font-size: 2em;
+}
+
+.content__text {
+  margin: 1em 0;
+}
+
+.content .btn {
+  font-family: 'Poppins', sans-serif;
+  background-color: #fff;
+  display: inline-block;
+  height: 40px;
+  padding: 0 4em;
+  border-radius: 40px;
+  color: var(--primaryColor);
+  line-height: 40px;
+  text-decoration: none;
+  font-size: .9em;
+  box-shadow: 0 3px 1px 0 rgba(0,0,0,.2);
+}
+
+
+
+.footer {
+  margin: 4em 0 2em 0;
+  display:flex;
+  justify-content: center;
+}
+
+.footer div {
+  width: 30px;
+  height: 30px;
+  border:1px solid #fff;
+  border-radius: 50%;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  margin: 0 .5em;
+  cursor: pointer;
+}
+
+
+@media screen and (min-width: 960px) {
+
+  .wrapper {
+    background-image: url(../images/bg-desktop.svg);
+    -webkit-background-size: contain;
+    background-size: contain;
+  }
+  
+  .ilustration {
+    width: 100%;
+    margin: 3em 0;
+  }
+  
+  .main {
+    display: flex;
+    align-items: center
+  }
+  
+  .content {
+    padding-left:3em;
+    text-align: left;
+  }
+  
+  
+  .footer {
+    justify-content: flex-end;
+  }
+}
